@@ -139,10 +139,18 @@ function initContactForm() {
           contactForm.reset();
           
           // Show success status
-          formStatus.className = 'form-status success';
-          formStatus.textContent = 'Your message has been sent successfully! Thank you.';
+          // formStatus.className = 'form-status success';
+          // formStatus.textContent = 'Your message has been sent successfully! Thank you.';
           
-          // Reset button
+          // // Reset button
+          // submitBtn.disabled = false;
+          // submitBtnText.textContent = originalText;
+          // submitBtnIcon.className = originalIconClass;
+
+          formStatus.style.display = "block";
+          formStatus.className = "form-status success";
+          formStatus.innerHTML = "✅ Your message has been sent successfully!";
+
           submitBtn.disabled = false;
           submitBtnText.textContent = originalText;
           submitBtnIcon.className = originalIconClass;
